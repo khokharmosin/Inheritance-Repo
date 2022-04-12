@@ -14,27 +14,14 @@ public class Student {
     }
 }
 
-class Result extends Student {
-    int perc;
+class Internal extends Student {
+    int im1;
+    int im2;
 
-    void setPerc() {
-        System.out.println("Enter The Percentage : ");
-        perc = scanner.nextInt();
-    }
-
-    void getResult() {
-        System.out.println("ID : " + id);
-        System.out.println("Name : " + name);
-        System.out.println("Percentage : " + perc);
+    void setMarks() {
+        System.out.println("Enter The Im1 Marks : ");
+        im1 = scanner.nextInt();
+        System.out.println("Enter The Im2 Marks : ");
+        im2 = scanner.nextInt();
     }
 }
-
-class Main {
-    public static void main(String[] args) {
-        Result result = new Result();
-        result.setStudent();
-        result.setPerc();
-        result.getResult();
-    }
-}
-
